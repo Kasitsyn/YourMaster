@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+}
+
+*, *:after, *:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+ul li {
+    list-style: none;
+}
+
+header {
+    background-color: #1D4354;
+    height: 70px;
+}
+
+header .container {
+    padding: 18px 0 18px 0;
+}
+
+.nav-item {
+    margin: -6px 0 0 0;
+}
+
+header .container p {
+    font-size: 18px;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.logoBlock li {
+    display: inline-block;
+}
+
+.logoBlock img {
+    display: none;
+}
+
+.logoBlock :nth-child(2) {
+    margin-left: 10px;
+}
+
+header .container .logoBlock {
+    float: left;
+}
+
+header .container .logo {
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: -8px;
+}
+
+header .container img {
+    float: left;
+    width: 25px;
+    height: 25px;
+}
+
+header .container .logo span {
+    color: #6FDA44;
+}
+
+header .container .btn-success {
+    width: 109px;
+    height: 34px;
+    background: #37A000;
+    border-radius: 6px;
+    font-size: 17px;
+    padding-top: 3px;
+}
+
+header .row {
+    width: inherit;
+}
+
+@media (max-width: 991px) {
+    header {
+        height: 43px;
+    }
+    header .container {
+        padding: 4px 0 0 0;
+    }
+    header .container img {
+        display: block;
+        margin: 2px 0 0 5px;
+    }
+    header .container .col-6 {
+        display: none;
+    }
+    header .container .btn-success {
+        background: none;
+        border: none;
+        font-weight: 500;
+        font-size: 16px;
+        float: right;
+    }
+    header .container .logo {
+        font-size: 25px;
+        margin: -5px 0 0 35px;
+    }
+}
+
+@media (max-width: 378px) {
+    header .container .logo {
+        font-size: 20px;
+        margin: 0 0 0 35px;
+    }
+    header .container img {
+        margin: 4px 0 0 5px;
+    }
+    header .container .btn-success {
+        float: right;
+    }
+}
+
+/* MOBILE MENU */
+
+.mobileMenu {
+    position: absolute;
+    width: 100%;
+    background-color: #1D4354;
+    text-align: center;
+    height: 515px;
+    margin-top: -515px;
+}
+
+.mobileMenu .mobileLogo {
+    text-align: left;
+    margin: -6px 0 0 0;
+    font-weight: 500;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.mobileMenu p {
+    margin: 5px 0 0 15px;
+    font-size: 25px;
+}
+
+.mobileMenu .mobileLogo span {
+    color: #6FDA44;
+}
+
+.close {
+    float: right;
+    height: 25px;
+    width: 25px;
+    margin: 14px 0 0 0;
+}
+
+.input-group {
+    max-width: 92%;
+    margin: 20px auto;
+}
+
+.input-group-text img {
+    width: 25px;
+    height: 25px;
+}
+
+.input-group input {
+    background-color: #436878;
+    border-radius: 0 25px 25px 0;
+    border: none;
+}
+
+.input-group input:focus {
+    background-color: #436878;
+    box-shadow: none;
+    color: #FFFFFF;
+}
+
+.input-group input:focus::placeholder {
+    color: transparent;
+}
+
+.input-group input::placeholder {
+    color: #FFFFFF;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.input-group span {
+    background-color: #436878;
+    border-radius: 25px 0 0 25px;
+    border: none;
+}
+
+.mobileMenu .firstMobileMenu {
+    margin-top: 45px;
+}
+
+.mobileMenu ul li {
+    color: #FFFFFF;
+    font-size: 18px;
+    text-align: left;
+    max-width: 92%;
+    height: 40px;
+}
+
+.mobileMenu ul {
+    padding-left: 1rem;
+}
+
+.firstMobileMenu li {
+    border-top: 1px solid #436878;
+}
+
+.mobileMenu .firstMobileMenu :nth-child(1) {
+    border-top: 2px solid #436878;
+    height: 30px;
+}
+
+.mobileMenu .firstMobileMenu :nth-child(2) {
+    border: none;
+}
+
+.secondMobileMenu li {
+    border: none;
+    font-size: 22px;
+}
+
+.secondMobileMenu li button {
+    font-size: 15px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    border: 2px solid #37A000;
+    width: 184px;
+    height: 40px;
+}
+
+/* jobApplicationBlock1 */
+
+.jobApplicationBlock {
+    max-height: 1024px;
+    background-color: #ECECEC;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.jobApplicationBlock form {
+    width: 1151px;
+    height: 884px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 46px 85px 0 91px;
+}
+
+.jobApplicationBlock form ul {
+    padding-left: 0;
+}
+
+.jobApplicationBlock form ul li {
+    display: inline-block;
+}
+
+.progressBlock {
+    font-size: 38px;
+    font-weight: normal;
+    color: #000000;
+}
+
+.progressBlock span {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.jobApplicationBlock form ul li:first-child {
+    border-radius: 50%;
+    background: #37A000;
+    height: 22px;
+    width: 22px;
+    margin-left: 0;
+}
+
+.jobApplicationBlock form ul li {
+    border-radius: 50%;
+    border: 2px solid #37A000;
+    background: white;
+    height: 22px;
+    width: 22px;
+    margin-left: 20px;
+}
+
+.jobApplicationBlock form .typeAuto {
+    font-size: 32px;
+    font-weight: normal;
+    margin-top: 70px;
+}
+
+label[for="option2"] {
+    margin-left: 40px;
+}
+
+.btn-secondary {
+    color: #37A000 !important;
+    background-color: #ffffff !important;
+    border-color: #37A000 !important;
+}
+
+.btn-check:active+.btn-secondary, .btn-check:checked+.btn-secondary, .btn-check:focus+.btn-secondary {
+    background-color: #e5fbdd !important;
+    box-shadow: none !important;
+}
+
+.jobApplicationBlock form .autoParametres {
+    font-size: 32px;
+    font-weight: normal;
+    margin-top: 42px;
+}
+
+.jobApplicationBlock form img {
+    margin-right: 10px;
+}
+
+.jobApplicationBlock form select[name="marka"], .jobApplicationBlock form select[name="model"], .jobApplicationBlock form select[name="year"] {
+    border: 2px solid #37A000;
+    width: 335px;
+    height: 48px;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 22px;
+    appearance: none;
+    background: url('autoImg/selectArrov.png');
+    background-repeat: no-repeat;
+    background-position: 94% 50%;
+    padding-left: 10px;
+}
+
+.jobApplicationBlock form select[name="model"], .jobApplicationBlock form select[name="year"] {
+    margin-top: 29px;
+}
+
+.jobApplicationButton1 {
+    margin: 125px auto;
+    display: block;
+    border: 2px solid #37A000;
+    border-radius: 30px;
+    color: rgba(0, 0, 0, 1);
+    background-color: white;
+    font-size: 20px;
+    font-weight: 600;
+    width: 314px;
+    height: 54px;
+}
+
+@media (max-width: 1400px) {
+    .jobApplicationBlock form {
+        width: 1051px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .jobApplicationBlock form {
+        width: 851px;
+    }
+}
+
+@media (max-width: 992px) {
+    .jobApplicationBlock form {
+        width: 616px;
+        text-align: center;
+    }
+    .progressBlock {
+        font-size: 32px;
+    }
+    .jobApplicationBlock form .typeAuto {
+        font-size: 28px;
+        margin-top: 60px;
+    }
+    .btn-secondary {
+        width: 335px;
+    }
+    label[for="option2"] {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .jobApplicationBlock form .autoParametres {
+        font-size: 28px;
+        margin-top: 32px;
+    }
+    .jobApplicationBlock form select[name="marka"], .jobApplicationBlock form select[name="model"], .jobApplicationBlock form select[name="year"] {
+        font-size: 20px;
+    }
+    .jobApplicationBlock form select[name="model"], .jobApplicationBlock form select[name="year"] {
+        margin-top: 17px;
+    }
+    .jobApplicationButton1 {
+        margin-top: 85px;
+        display: block;
+        border: 2px solid #37A000;
+        border-radius: 30px;
+        color: rgba(0, 0, 0, 1);
+        background-color: white;
+        font-size: 20px;
+        font-weight: 600;
+        width: 314px;
+        height: 54px;
+    }
+}
+
+@media (max-width: 768px) {
+    .jobApplicationBlock form {
+        width: 516px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 552px) {
+    .jobApplicationBlock form {
+        width: 396px;
+        text-align: center;
+        padding: 46px 5px 0 10px;
+    }
+}
+
+@media (max-width: 429px) {
+    .jobApplicationBlock form {
+        width: 296px;
+        height: 720px;
+    }
+    .progressBlock {
+        font-size: 23px;
+    }
+    .jobApplicationBlock form .typeAuto {
+        font-size: 18px;
+        margin-top: 40px;
+    }
+    .btn-secondary {
+        width: 256px;
+    }
+    .jobApplicationBlock form .autoParametres {
+        font-size: 18px;
+        margin-top: 24px;
+    }
+    .jobApplicationBlock form select[name="marka"], .jobApplicationBlock form select[name="model"], .jobApplicationBlock form select[name="year"] {
+        font-size: 16px;
+        width: 256px;
+    }
+    .jobApplicationBlock form select[name="model"], .jobApplicationBlock form select[name="year"] {
+        margin-top: 17px;
+    }
+    .jobApplicationButton1 {
+        margin-top: 38px;
+        font-size: 18px;
+        font-weight: 600;
+        width: 190px;
+        height: 49px;
+    }
+}
+
+/* FOOTER */
+
+footer {
+    min-height: 736px;
+    background-color: #f5faff;
+}
+
+footer .container :first-child div {
+    margin-top: 90px;
+}
+
+footer h3 {
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 38px;
+}
+
+footer h3 span {
+    color: #6FDA44;
+}
+
+footer a[href="tel:+380631349272"] {
+    color: #37A000;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+footer a img {
+    margin-right: 8px;
+    height: 22px;
+    width: 22px;
+}
+
+footer ul {
+    margin-top: 25px;
+    padding-left: 0;
+}
+
+footer ul li {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+footer p {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+footer .row :nth-child(2) ul li {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+footer .row :nth-child(2) ul li img {
+    width: 64px;
+    height: 64px;
+}
+
+footer .lastFooterInfo {
+    margin-top: 192px;
+}
+
+footer .lastFooterInfo div {
+    font-size: 13px;
+}
+
+@media (max-width: 1225px) {
+    footer {
+        height: 476px;
+    }
+    footer h3 {
+        font-size: 26px;
+    }
+    footer .lastFooterInfo {
+        margin-top: 20px;
+    }
+    footer ul {
+        margin-top: 15px;
+        padding-left: 0;
+    }
+    footer h3 {
+        margin-bottom: 15px;
+    }
+    footer a[href="tel:+380631349272"] {
+        font-size: 20px;
+    }
+    footer p {
+        font-size: 18px;
+    }
+    footer .howItWorksBtn {
+        width: 187px;
+        float: left;
+        margin-top: 5px;
+    }
+    footer ul li {
+        font-size: 18px;
+        margin-top: 8px;
+    }
+    footer .row :nth-child(2) ul li {
+        margin-right: -10px;
+    }
+    footer .row :nth-child(2) ul li img {
+        width: 34px;
+        height: 34px;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        height: 850px;
+    }
+    footer h3 {
+        font-size: 24px;
+    }
+    footer ul li {
+        font-size: 16px;
+    }
+    footer .container :first-child div {
+        margin-top: 40px;
+    }
+    footer .lastFooterInfo {
+        margin-top: 45px;
+    }
+}

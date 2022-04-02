@@ -1,0 +1,28 @@
+.howItWorksBtn {
+    display: block;
+    margin: 28px auto 48px auto;
+    width: 314px;
+    height: 54px;
+    background: #ffffff;
+    border: 2px solid #37a000;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.takeYourValueBtn {
+    width: 252px;
+    height: 48px;
+    background: #37a000;
+    border-radius: 6px;
+    font-size: 19px;
+}
+
+.btn-success {
+    width: 109px;
+    height: 34px;
+    background: #37A000;
+    border-radius: 6px;
+    font-size: 17px;
+    padding-top: 3px;
+}

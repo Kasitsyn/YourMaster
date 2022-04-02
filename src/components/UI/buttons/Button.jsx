@@ -1,7 +1,11 @@
-export function Button(props) {
-    return (
-        <>
-            <button className="btn btn-success">Button</button>
-        </>
-    )
+import classNames from "classnames";
+import "./Button.css"
+export function Button({children, onClick, className, disabled, active, ...attrs}) {
+  const classes = classNames("btn", className, { active });
+
+  return (
+    <button {...attrs} className={classes} disabled={disabled} onClick={onClick}>
+      {children}
+    </button>
+  );
 }

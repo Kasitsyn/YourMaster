@@ -1,0 +1,65 @@
+
+header {
+    background-color: #1D4354;
+    height: 70px;
+}
+
+header .container {
+    padding: 18px 0 18px 0;
+}
+
+.nav-item {
+    margin: -6px 0 0 0;
+}
+
+header .container p {
+    font-size: 18px;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.logoBlock li {
+    display: inline-block;
+}
+
+.logoBlock img {
+    display: none;
+}
+
+.logoBlock :nth-child(2) {
+    margin-left: 10px;
+}
+
+header .container .logoBlock {
+    float: left;
+}
+
+header .container .logo {
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: -8px;
+}
+
+header .container img {
+    float: left;
+    width: 25px;
+    height: 25px;
+}
+
+header .container .logo span {
+    color: #6FDA44;
+}
+
+header .container .btn-success {
+    width: 109px;
+    height: 34px;
+    background: #37A000;
+    border-radius: 6px;
+    font-size: 17px;
+    padding-top: 3px;
+}
+
+header .row {
+    width: inherit;
+}

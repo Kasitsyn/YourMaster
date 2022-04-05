@@ -26,3 +26,15 @@
     font-size: 17px;
     padding-top: 3px;
 }
+
+.btn-simpleButton{
+    width: 314px;
+    height: 54px;
+    border: 2px solid;
+    border-radius: 30px;
+    font-weight: 600;
+    margin-right: 73px;
+    background: #339101;
+    border: none;
+    color: white;
+}

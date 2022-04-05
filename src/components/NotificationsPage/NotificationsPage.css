@@ -1,0 +1,32 @@
+.notificationsBlock {
+    margin-top: 100px;
+}
+
+.notificationsBlock h3 {
+    font-weight: 500;
+    margin-bottom: 100px;
+    font-size: 40px;
+    color: #000000;
+}
+
+.notificationsBody {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 65px;
+}
+
+.notificationsIcon {
+    display: flex;
+    align-items: center;
+}
+
+.notificationsBlock p {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.notificationsBlock p span {
+    font-weight: 500;
+    font-size: 30px;
+    color: #707070;
+}

@@ -1,0 +1,40 @@
+.nav-item-tab {
+  /* flex: 1;
+  background-color: #FFF;
+  border: 1px solid #EDEDED;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 600; */
+  width: 10em;
+  /* поддерживаются любые единицы, в том числе проценты */
+  margin: 1em auto;
+  background: silver;
+  border-radius: 50%;
+
+  border-radius: 50%;
+  border: 2px solid #37A000;
+  background: white;
+  height: 22px;
+  width: 22px;
+  margin-left: 20px;
+}
+
+.nav-item-tab.active {
+  background: #37A000;
+  /* border-bottom-color: transparent;
+  color: #FFF; */
+}
+
+
+
+.nav-item-tab::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 100%;
+  font-size: 0px;
+}

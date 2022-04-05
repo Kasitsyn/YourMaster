@@ -1,16 +1,15 @@
 import './App.css';
 import { Footer } from './components/Footer/Footer';
 import { Header } from './components/Header/Header';
-import { MasterLoginPage } from './components/MasterLoginPage/MasterLoginPage';
-import { Image } from './components/UI/Img/Img';
-import { Input } from './components/UI/Input/Input';
+import { JobApplication } from './components/JobApplication/JobApplication';
+
 
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <MasterLoginPage/>
+      <JobApplication />
       <Footer />
     </div>
   );

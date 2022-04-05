@@ -2,6 +2,7 @@ import './App.css';
 import { Footer } from './components/Footer/Footer';
 import { Header } from './components/Header/Header';
 import { Image } from './components/UI/Img/Img';
+import { Input } from './components/UI/Input/Input';
 
 
 function App() {
@@ -9,11 +10,6 @@ function App() {
     <div className="App">
       <Header />
       <Footer />
-      <Image
-        src={require("./img/star.png")}
-        alt={'IMG'}
-        width={200}
-        height={200} />
     </div>
   );
 }

@@ -1,0 +1,11 @@
+.geoLocation {
+    display: flex;
+    margin: 15px 22px;
+    font-weight: 600;
+    font-size: 26px;
+    color: #000000;
+}
+
+.geo {
+    margin-left: 5px;
+}

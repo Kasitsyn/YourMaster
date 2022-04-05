@@ -1,0 +1,27 @@
+.baseWorkCardDescription {
+    padding: 20px 40px;
+}
+
+.baseWorkCardName {
+    font-weight: 600;
+    font-size: 30px;
+    color: #37A000;
+}
+
+.baseWorkCardDescription p span {
+    font-weight: 600;
+    font-size: 22px;
+    color: #000000;
+}
+
+.baseWorkCardDescription p {
+    font-weight: 600;
+    font-size: 22px;
+    color: #707070;
+}
+
+.baseWorkCardDescription .baseWorkCardBrands {
+    font-weight: 600;
+    font-size: 22px;
+    color: #1400FF;
+}

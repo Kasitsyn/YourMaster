@@ -1,0 +1,9 @@
+.baseWorkCardBlock {
+    display: flex;
+    width: 1181px;
+    height: 375px;
+    left: 113px;
+    margin: 30px auto 30px auto; /* 0 auto */
+    background: #F9F9F9;
+    box-shadow: -2px 2px 4px 4px rgba(0, 0, 0, 0.05);
+}

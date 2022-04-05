@@ -1,0 +1,259 @@
+.jobApplicationBlock {
+  max-height: 1024px;
+  background-color: #ffffff;
+  /* padding-top: 70px; */
+  padding-bottom: 70px;
+}
+
+.jobApplicationBlock form {
+  width: 1151px;
+  height: 884px;
+  margin: -40px auto;
+  background-color: white;
+  padding: 46px 85px 0 91px;
+}
+
+.jobApplicationBlock form ul {
+  padding-left: 0;
+}
+
+.jobApplicationBlock form ul li {
+  display: inline-block;
+}
+
+.progressBlock {
+  font-size: 38px;
+  font-weight: normal;
+  color: #000000;
+}
+
+.progressBlock span {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.jobApplicationBlock form ul li:first-child {
+  border-radius: 50%;
+  background: #37A000;
+  height: 22px;
+  width: 22px;
+  margin-left: 0;
+}
+
+.jobApplicationBlock form ul li {
+  border-radius: 50%;
+  border: 2px solid #37A000;
+  background: white;
+  height: 22px;
+  width: 22px;
+  margin-left: 20px;
+}
+
+.jobApplicationBlock form .typeAuto {
+  font-size: 32px;
+  font-weight: normal;
+  margin-top: 70px;
+}
+
+label[for="option2"] {
+  margin-left: 40px;
+}
+
+.btn-secondary {
+  color: #37A000 !important;
+  background-color: #ffffff !important;
+  border-color: #37A000 !important;
+}
+
+.btn-check:active+.btn-secondary,
+.btn-check:checked+.btn-secondary,
+.btn-check:focus+.btn-secondary {
+  background-color: #e5fbdd !important;
+  box-shadow: none !important;
+}
+
+.jobApplicationBlock form .autoParametres {
+  font-size: 32px;
+  font-weight: normal;
+  margin-top: 42px;
+}
+
+.jobApplicationBlock form img {
+  margin-right: 10px;
+}
+
+.jobApplicationBlock form select[name="marka"],
+.jobApplicationBlock form select[name="model"],
+.jobApplicationBlock form select[name="year"] {
+  border: 2px solid #37A000;
+  width: 335px;
+  height: 48px;
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 1);
+  font-size: 22px;
+  appearance: none;
+  background: url('../../img/car1.png');
+  background-repeat: no-repeat;
+  background-position: 94% 50%;
+  padding-left: 10px;
+}
+
+.jobApplicationBlock form select[name="model"],
+.jobApplicationBlock form select[name="year"] {
+  margin-top: 29px;
+}
+
+.jobApplicationButton1 {
+  margin: 125px auto;
+  display: block;
+  border: 2px solid #37A000;
+  border-radius: 30px;
+  color: rgba(0, 0, 0, 1);
+  background-color: white;
+  font-size: 20px;
+  font-weight: 600;
+  width: 314px;
+  height: 54px;
+}
+
+/* jobApplication2 */
+
+.jobApplicationBlock2 {
+  min-height: 1024px;
+  background-color: #ffffff;
+  /* padding-top: 70px; */
+  padding-bottom: 70px;
+}
+
+.jobApplicationBlock2 form {
+  height: 914px;
+  width: 1151px;
+  margin: -40px auto;
+  background-color: white;
+  padding: 46px 85px 0 91px;
+}
+
+.title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.jobApplicationBlock2 .progressBlock {
+  /* float: left; */
+  font-size: 38px;
+  font-weight: normal;
+  color: #000000;
+  align-self: center;
+}
+
+.jobApplicationBlock2 .progressBlock span {
+  color: rgba(0, 0, 0, 0.6);
+
+}
+
+
+.currentCar {
+  /* float: right; */
+  font-size: 25px;
+  align-self: center;
+
+}
+
+.describeJob {
+  font-size: 32px;
+  margin-top: 50px;
+}
+
+.jobApplicationBlock2 textarea {
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  padding: 10px 0 0 20px;
+}
+
+.jobApplicationBlock2 textarea::placeholder {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.jobApplicationBlock2 label[for="photo"] {
+  margin-top: 15px;
+  font-size: 25px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 1);
+}
+
+input[type='file'] {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.moreInfoFirst {
+  margin-top: 20px;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.moreInfoSecond {
+  margin-top: -15px;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.jobApplicationBlock2 form input[placeholder="номер авто"],
+.jobApplicationBlock2 form input[placeholder="VIN - код автомобиля"] {
+  margin-top: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  height: 52px;
+  padding-left: 25px;
+}
+
+.jobApplicationBlock2 form input[placeholder="номер авто"]::placeholder,
+.jobApplicationBlock2 form input[placeholder="VIN - код автомобиля"]::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 25px;
+}
+
+.jobApplicationBlock2 form input[placeholder="номер авто"] {
+  width: 271px;
+}
+
+.jobApplicationBlock2 form input[placeholder="VIN - код автомобиля"] {
+  width: 337px;
+}
+
+.checkBox2Step {
+  margin-top: 25px;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.form-check-input:checked {
+  background-color: #37A000 !important;
+}
+
+.formButtons2 {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.formButtons2 input {
+  display: inline-block;
+  width: 314px;
+  height: 54px;
+  border: 2px solid;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+.formButtons2 input:first-child {
+  margin-right: 73px;
+  background: #339101;
+  border: none;
+  color: white;
+}
+
+.formButtons2 input:last-child {
+  border-color: #339101;
+  color: #000000;
+  background-color: white;
+}

@@ -12,24 +12,24 @@ export function Footer() {
               <span>Твой</span>Мастер
             </h3>
             <a href="tel:+380631349272">
-              <Icon name="phone" />
-              +38063 134 92 72
+              <Icon name="phone" className={'phoneIcon'} size={2}/>
+              <span> +38063 134 92 72</span>
             </a>
             <ul className="footerFirst">
               <li>
-                <a href="">О нас</a>
+                <a href="#">О нас</a>
               </li>
               <li>
-                <a href="">Помощь</a>
+                <a href="#">Помощь</a>
               </li>
               <li>
-                <a href="">Блог</a>
+                <a href="#">Блог</a>
               </li>
               <li>
-                <a href="">Пресса</a>
+                <a href="#">Пресса</a>
               </li>
               <li>
-                <a href="">Связаться с нами</a>
+                <a href="#">Связаться с нами</a>
               </li>
             </ul>
           </div>

@@ -1,0 +1,13 @@
+.adminPanelBlock {
+    margin: 100px 0;
+}
+
+.adminPanelBlock h3 {
+    margin: 90px 0 40px 0;
+}
+
+.adminSectionsBlock {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

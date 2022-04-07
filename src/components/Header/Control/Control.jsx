@@ -1,19 +1,21 @@
 import React from "react";
+import { Badge } from "../../UI/badge/Badge";
 import "./Control.css";
 
 export function Control() {
     return (
-        <ul className="controlBlock">
-            <li>
+        <div className="controlBlock">
+            <div className="bellBlock">
                 <a href="#">
+                    <Badge circle success value={2}/>
                     <img src={require("../../../img/bell.png")} alt="notifications" />
                 </a>
-            </li>
-            <li>
+            </div>
+            <div>
                 <a href="#">
                     <img src={require("../../../img/settings.png")} alt="settings" />
                 </a>
-            </li>
-        </ul>
+            </div>
+        </div>
     );
 }

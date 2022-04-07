@@ -1,0 +1,13 @@
+.controlBlock {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0 0 30px;
+}
+
+.controlBlock div {
+    margin-left: 20px;
+}
+
+.bellBlock {
+    position: relative;    
+}

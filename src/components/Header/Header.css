@@ -63,3 +63,7 @@ header .container .btn-success {
 header .row {
     width: inherit;
 }
+
+.menuBox {
+    display: flex;
+}

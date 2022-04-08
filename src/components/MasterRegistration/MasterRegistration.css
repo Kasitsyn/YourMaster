@@ -85,6 +85,20 @@ select {
     margin-bottom: 37px;
 }
 
+.form__submit-link {
+    width: 315px;
+    height: 47px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    padding-left: 14px;
+    background-color: #339101;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 21px;
+    border: none !important;
+}
+
 .registrationBlock form input[value="Зарегестрироваться"] {
     background-color: #339101;
     color: #ffffff;

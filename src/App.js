@@ -1,5 +1,7 @@
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
+import { createStore } from 'redux';
 import './App.css';
+import { AdminPanel } from './components/AdminPanel/AdminPanel';
 import { BaseWorkCard } from './components/BaseWorkCard/BaseWorkCard';
 import { Footer } from './components/Footer/Footer';
 import { Header } from './components/Header/Header';
@@ -7,21 +9,35 @@ import { JobApplication } from './components/JobApplication/JobApplication';
 import { MasterRegistration } from './components/MasterRegistration/MasterRegistration';
 import { NotFoundPage } from './components/NotFoundPage/NotFoundPage';
 
+// const defaultState = {
 
+// }
+
+// const reducer = (state = defaultState, action) => {
+//   switch (action.type) {
+
+
+
+//     default: return state
+//   }
+// }
+
+// const store = createStore()
 
 function App() {
   return (
     <div className="App">
-      {/* <Header /> */}
-      {/* <Routes>
-        <Route path='/' element={<MasterRegistration />} />
+      <Header />
+      <Routes>
+        <Route path='/' element={<Navigate to={'/registration'} />} />
         <Route path='/registration' element={<MasterRegistration />} />
-        <Route path='/find-master' element={<JobApplication />} />
+        <Route path='/place-work' element={<JobApplication />} />
         <Route path='/current-works' element={<BaseWorkCard />} />
+        <Route path="/admin-panel" element={<AdminPanel />} />
         <Route path='*' element={<NotFoundPage />} />
-      </Routes> */}
-      <MasterRegistration />
-      {/* <Footer /> */}
+      </Routes>
+      
+      <Footer />
     </div>
   );
 }

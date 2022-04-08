@@ -1,6 +1,15 @@
+import { Link, Route, Routes, useNavigate } from "react-router-dom";
+import { AdminPanel } from "../AdminPanel/AdminPanel";
+import { Button } from "../UI/buttons/Button";
 import "./MasterRegistration.css";
 
-export function MasterRegistration() {
+
+
+
+export function MasterRegistration(props) {
+    const navigate = useNavigate()
+
+    const onSubmit = () => navigate('/admin-panel')
 
     return (
         <div class="registrationBlock">
@@ -31,7 +40,9 @@ export function MasterRegistration() {
                     <br />
                     <input type="password" name="" id="" placeholder="Повторите пароль" />
                     <br />
-                    <input type="submit" value="Зарегистрироваться" />
+                    <Button className={'form__submit-link'} onClick={onSubmit} type="submit">Зарегистрироваться</Button>
+                    {/* <Link className="form__submit-link" to={'/admin-panel'}>Зарегистрироваться</Link> */}
+                    
                     <br />
                     <a href="#">Уже есть аккаунт?</a>
                     <hr />

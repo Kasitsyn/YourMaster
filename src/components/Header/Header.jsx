@@ -3,18 +3,19 @@ import { Button } from "../UI/buttons/Button";
 import { Nav } from "./NAV/Nav";
 import "./Header.css";
 import { Control } from "./Control/Control";
-import { Link, Route, Routes } from "react-router-dom";
+import { Link, Route, Routes, useNavigate } from "react-router-dom";
 import { JobApplication } from "../JobApplication/JobApplication";
 import { BaseWorkCard } from "../BaseWorkCard/BaseWorkCard";
 import { MasterRegistration } from "../MasterRegistration/MasterRegistration";
 import { NotFoundPage } from "../NotFoundPage/NotFoundPage";
 
 
-export function Header(props) {
 
+export function Header(props) {
+    const navigate = useNavigate()
     const navForClient = [
         { id: 1, title: 'Найти мастера', link: '/find-master' },
-        { id: 2, title: 'Разместить работу', link: '/find-job' },
+        { id: 2, title: 'Разместить работу', link: '/place-work' },
         { id: 3, title: 'Текущие работы', link: '/current-works' },
     ];
 
@@ -22,6 +23,8 @@ export function Header(props) {
     //     { id: 1, title: 'Найти работу' },
     //     { id: 2, title: 'Текущие работы' },
     // ];
+
+    const handleButtonClick = () => navigate('/')
 
     return (
         <header>
@@ -40,7 +43,7 @@ export function Header(props) {
                         
                     </div>
                     <div className="col-lg-1 col-md-2 col-sm-4 col-5 loginBlock">
-                        <Button className="btn-success">Войти</Button>
+                        <Button onClick={handleButtonClick} className="btn-success">Войти</Button>
                     </div>
                 </div>
             </div>

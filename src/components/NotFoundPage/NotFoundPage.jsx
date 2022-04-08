@@ -1,5 +1,6 @@
+import "./NotFoundPage.css"
 export function NotFoundPage (props) {
     return (
-        <p>Page is not found.</p>
+        <p className="notFound">Page is not found.</p>
     )
 }

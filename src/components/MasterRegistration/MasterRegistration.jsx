@@ -1,6 +1,6 @@
-import "./MasterLoginPage.css";
+import "./MasterRegistration.css";
 
-export function MasterLoginPage() {
+export function MasterRegistration() {
 
     return (
         <div class="registrationBlock">
@@ -31,7 +31,7 @@ export function MasterLoginPage() {
                     <br />
                     <input type="password" name="" id="" placeholder="Повторите пароль" />
                     <br />
-                    <input type="submit" value="Зарегестрироваться" />
+                    <input type="submit" value="Зарегистрироваться" />
                     <br />
                     <a href="#">Уже есть аккаунт?</a>
                     <hr />
@@ -46,6 +46,6 @@ export function MasterLoginPage() {
     );
 }
 
-MasterLoginPage.defaultProps = {
+MasterRegistration.defaultProps = {
 
 };

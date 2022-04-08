@@ -1,0 +1,8 @@
+.cityJob {
+    margin-left: 30px;
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+    border: 2px solid #37A000;
+    box-sizing: border-box;
+    border-radius: 5px;
+}

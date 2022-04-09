@@ -31,7 +31,9 @@ export function Header(props) {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-4 col-md-10 col-sm-8 col-7 logoBlock">
-                        <p className="logo"><span>Твой</span>Мастер</p>
+                        <Link to="/admin-panel"> 
+                            <p className="logo"><span>Твой</span>Мастер</p>
+                        </Link>
                     </div>
                     <div className="col-6 col-lg-7 menuBox">
                             <ul className="nav justify-content-center">

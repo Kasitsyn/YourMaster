@@ -35,7 +35,7 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route path='/' element={<Navigate to={'/client-page'} />} />
+        <Route path='/' element={<Navigate to={'/YourMaster'} />} />
         <Route path='/YourMaster' element={<ClientLandingPage />} />
         <Route path='/registration' element={<MasterRegistration />} />
         <Route path='/place-work' element={<JobApplication />} />

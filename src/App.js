@@ -1,6 +1,7 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { createStore } from 'redux';
 import './App.css';
+import { ClientLandingPage } from './components/ClientLandingPage/ClientLandingPage.jsx';
 import { AdminPanel } from './components/AdminPanel/AdminPanel';
 import { BaseWorkCard } from './components/BaseWorkCard/BaseWorkCard';
 import { Footer } from './components/Footer/Footer';
@@ -11,6 +12,7 @@ import { NotFoundPage } from './components/NotFoundPage/NotFoundPage';
 import { FindMaster } from "./components/FindMaster/FindMaster.jsx"; 
 import { FindJob } from "./components/FindJob/FindJob.jsx"; 
 import { NotificationsPage } from "./components/NotificationsPage/NotificationsPage.jsx"
+
 
 
 // const defaultState = {
@@ -33,7 +35,8 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route path='/' element={<Navigate to={'/registration'} />} />
+        <Route path='/' element={<Navigate to={'/client-page'} />} />
+        <Route path='/client-page' element={<ClientLandingPage />} />
         <Route path='/registration' element={<MasterRegistration />} />
         <Route path='/place-work' element={<JobApplication />} />
         <Route path='/current-works' element={<BaseWorkCard />} />

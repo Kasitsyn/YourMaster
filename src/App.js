@@ -36,7 +36,7 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Navigate to={'/client-page'} />} />
-        <Route path='/client-page' element={<ClientLandingPage />} />
+        <Route path='/YourMaster' element={<ClientLandingPage />} />
         <Route path='/registration' element={<MasterRegistration />} />
         <Route path='/place-work' element={<JobApplication />} />
         <Route path='/current-works' element={<BaseWorkCard />} />

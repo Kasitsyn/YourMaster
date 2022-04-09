@@ -16,7 +16,7 @@ export function Header(props) {
     const navForClient = [
         { id: 1, title: 'Найти мастера', link: '/find-master' },
         { id: 2, title: 'Разместить работу', link: '/place-work' },
-        { id: 3, title: 'Текущие работы', link: '/current-works' },
+        { id: 3, title: 'Панель управления', link: '/admin-panel' },
     ];
 
     // const navForMaster = [

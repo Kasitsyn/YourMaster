@@ -10,6 +10,7 @@ import { MasterRegistration } from './components/MasterRegistration/MasterRegist
 import { NotFoundPage } from './components/NotFoundPage/NotFoundPage';
 import { FindMaster } from "./components/FindMaster/FindMaster.jsx"; 
 import { FindJob } from "./components/FindJob/FindJob.jsx"; 
+import { NotificationsPage } from "./components/NotificationsPage/NotificationsPage.jsx"
 
 
 // const defaultState = {
@@ -39,6 +40,7 @@ function App() {
         <Route path="/admin-panel" element={<AdminPanel />} />
         <Route path="/find-master" element={<FindMaster />} />
         <Route path="/find-job" element={<FindJob />} />
+        <Route path="/notifications" element={<NotificationsPage />} />
         <Route path='*' element={<NotFoundPage />} />
       </Routes>
       

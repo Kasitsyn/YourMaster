@@ -1,15 +1,17 @@
 import React from "react";
 import { Badge } from "../../UI/badge/Badge";
 import "./Control.css";
+import { Link, Route, Routes, useNavigate } from "react-router-dom";
+
 
 export function Control() {
     return (
         <div className="controlBlock">
             <div className="bellBlock">
-                <a href="#">
+                <Link to="/notifications">
                     <Badge circle success value={2}/>
                     <img src={require("../../../img/bell.png")} alt="notifications" />
-                </a>
+                </Link>
             </div>
             <div>
                 <a href="#">

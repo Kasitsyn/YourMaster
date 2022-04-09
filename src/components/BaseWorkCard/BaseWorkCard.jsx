@@ -9,7 +9,7 @@ export function BaseWorkCard(props) {
     return (
         <div className="baseWorkCardBlock">
             <BaseWorkCardImg />
-            <MasterDescription />
+                {props.description}
             <GeoLocation />
         </div>
     );

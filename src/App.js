@@ -9,6 +9,8 @@ import { JobApplication } from './components/JobApplication/JobApplication';
 import { MasterRegistration } from './components/MasterRegistration/MasterRegistration';
 import { NotFoundPage } from './components/NotFoundPage/NotFoundPage';
 import { FindMaster } from "./components/FindMaster/FindMaster.jsx"; 
+import { FindJob } from "./components/FindJob/FindJob.jsx"; 
+
 
 // const defaultState = {
 
@@ -36,6 +38,7 @@ function App() {
         <Route path='/current-works' element={<BaseWorkCard />} />
         <Route path="/admin-panel" element={<AdminPanel />} />
         <Route path="/find-master" element={<FindMaster />} />
+        <Route path="/find-job" element={<FindJob />} />
         <Route path='*' element={<NotFoundPage />} />
       </Routes>
       

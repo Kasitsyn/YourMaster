@@ -67,3 +67,44 @@ header .row {
 .menuBox {
     display: flex;
 }
+
+@media (max-width: 991px) {
+    header {
+        height: 43px;
+    }
+    header .container {
+        padding: 4px 0 0 0;
+    }
+    header .container img {
+        display: block;
+        margin: 2px 0 0 5px;
+    }
+    header .container .col-6 {
+        display: none;
+    }
+    header .container .btn-success {
+        background: none;
+        border: none;
+        font-weight: 500;
+        font-size: 16px;
+        float: right;
+    }
+    header .container .logo {
+        font-size: 25px;
+        margin: -5px 0 0 35px;
+    }
+}
+
+@media (max-width: 378px) {
+    header .container .logo {
+        font-size: 20px;
+        margin: 0 0 0 35px;
+    }
+    header .container img {
+        margin: 4px 0 0 5px;
+    }
+    header .container .btn-success {
+        float: right;
+    }
+}
+

@@ -24,18 +24,18 @@ export function Header(props) {
     //     { id: 2, title: 'Текущие работы' },
     // ];
 
-    const handleButtonClick = () => navigate('/')
+    const handleButtonClick = () => navigate('/registration')
 
     return (
         <header>
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-4 col-md-10 col-sm-8 col-7 logoBlock">
+                    <div className="col-lg-3 col-md-10 col-sm-8 col-7 logoBlock">
                         <Link to="/admin-panel"> 
                             <p className="logo"><span>Твой</span>Мастер</p>
                         </Link>
                     </div>
-                    <div className="col-6 col-lg-7 menuBox">
+                    <div className="col-6 col-lg-8 menuBox">
                             <ul className="nav justify-content-center">
                                 {navForClient.map(item =>
                                     <Nav link={item.link} key={item.id} item={item} />

@@ -14,9 +14,9 @@ export function Control() {
                 </Link>
             </div>
             <div>
-                <a href="#">
+                <Link to="/settings">
                     <img src={require("../../../img/settings.png")} alt="settings" />
-                </a>
+                </Link>
             </div>
         </div>
     );

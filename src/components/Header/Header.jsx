@@ -8,6 +8,8 @@ import { JobApplication } from "../JobApplication/JobApplication";
 import { BaseWorkCard } from "../BaseWorkCard/BaseWorkCard";
 import { MasterRegistration } from "../MasterRegistration/MasterRegistration";
 import { NotFoundPage } from "../NotFoundPage/NotFoundPage";
+import { useDispatch, useSelector } from "react-redux";
+import { signUp } from "../../store/authSlice";
 
 
 
@@ -19,33 +21,35 @@ export function Header(props) {
         { id: 3, title: 'Панель управления', link: '/admin-panel' },
     ];
 
-    // const navForMaster = [
-    //     { id: 1, title: 'Найти работу' },
-    //     { id: 2, title: 'Текущие работы' },
-    // ];
-
+    const isAuth = useSelector((state) => state.auth.isAuth)
+    const dispatch = useDispatch()
     const handleButtonClick = () => navigate('/registration')
-
+    const handleButtonClickLogOut = () => {
+        dispatch(signUp(false))
+        navigate('/login')
+    }
     return (
         <header>
             <div className="container">
                 <div className="row">
                     <div className="col-lg-3 col-md-10 col-sm-8 col-7 logoBlock">
-                        <Link to="/admin-panel"> 
+                        <Link to="/admin-panel">
                             <p className="logo"><span>Твой</span>Мастер</p>
                         </Link>
                     </div>
                     <div className="col-6 col-lg-8 menuBox">
-                            <ul className="nav justify-content-center">
-                                {navForClient.map(item =>
-                                    <Nav link={item.link} key={item.id} item={item} />
-                                )}
-                            </ul>
+                        <ul className="nav justify-content-center">
+                            {navForClient.map(item =>
+                                <Nav link={item.link} key={item.id} item={item} />
+                            )}
+                        </ul>
                         <Control />
-                        
+
                     </div>
                     <div className="col-lg-1 col-md-2 col-sm-4 col-5 loginBlock">
-                        <Button onClick={handleButtonClick} className="btn-success">Войти</Button>
+                        {isAuth
+                            ? <Button onClick={handleButtonClickLogOut} className="btn-success">Выйти</Button>
+                            : <Button onClick={handleButtonClick} className="btn-success">Войти</Button>}
                     </div>
                 </div>
             </div>

@@ -1,34 +1,74 @@
+import { useEffect, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux';
 import { Link, Route, Routes, useNavigate } from "react-router-dom";
+import { v4 as uuidv4 } from 'uuid';
+import { signUp } from '../../store/authSlice';
 import { AdminPanel } from "../AdminPanel/AdminPanel";
 import { Button } from "../UI/buttons/Button";
 import "./MasterRegistration.css";
 
-
-
-
 export function MasterRegistration(props) {
+
+    const [formData, setFormData] = useState({
+        id: '',
+        phone: '',
+        email: '',
+        status: '',
+        name: '',
+        city: '',
+        password: '',
+        password2: ''
+
+    })
+
+    const { phone, email, status, name, city, password, password2 } = formData
+
+    const isAuth = useSelector(state => state.auth.isAuth)
+    const dispatch = useDispatch()
+
+    const registerUser = () => localStorage[`${email}`] = JSON.stringify({ ...formData, id: uuidv4() });
+
+    const onSubmit = (e) => {
+        e.preventDefault()
+        registerUser()
+        dispatch(signUp(true))
+        navigate('/admin-panel')
+    }
+
     const navigate = useNavigate()
 
-    const onSubmit = () => navigate('/admin-panel')
+    // const onSubmit = () => navigate('/admin-panel')
+
+    const onChange = (e) => {
+
+        setFormData((prevState) => ({
+            ...prevState,
+            [e.target.name]: e.target.value,
+        }))
+
+        
+
+    }
 
     return (
         <div class="registrationBlock">
             <div class="container">
-                <form action="" name="userReg">
+                <form action="" name="userReg" onSubmit={onSubmit}>
                     <h1>Регистрация</h1>
-                    <input type="tel" name="phoneNumber" placeholder="Телефон" />
+                    <input type="tel" name="phone" placeholder="Телефон" id='phone' value={phone} onChange={onChange} />
                     <br />
-                    <input type="email" name="email" placeholder="Email" />
+                    <input type="email" name="email" placeholder="Email" id='email' value={email} onChange={onChange} />
                     <br />
                     <label for="master"><input class="form-check-input" type="radio" name="status" id="master"
-                        value="master" checked /><span>Индивидуальный мастер</span></label>
+                        value="Индивидуальный мастер" onChange={onChange} /><span>Индивидуальный мастер</span></label>
                     <br />
                     <label for="station"><input class="form-check-input" type="radio" name="status" id="station"
-                        value="station" /><span>Автосервис</span></label>
+                        value="Автосервис" onChange={onChange} /><span>Автосервис</span></label>
                     <br />
-                    <input type="text" name="companyName" placeholder="Имя/Название компании" />
+                    <input type="text" name="name" id='name' value={name} onChange={onChange} placeholder="Имя/Название компании" />
                     <br />
-                    <select name="city" id="">
+                    <br />
+                    <select name="city" id="city" value={city} onChange={onChange}>
                         <option disabled selected>Город</option>
                         <option value="kiev">Киев</option>
                         <option value="lvov">Львов</option>
@@ -36,18 +76,18 @@ export function MasterRegistration(props) {
                         <option value="odessa">Одесса</option>
                     </select>
                     <br />
-                    <input type="password" name="" id="" placeholder="Пароль" />
+                    <input type="password" name="password" id="password" value={password} onChange={onChange} placeholder="Пароль" />
                     <br />
-                    <input type="password" name="" id="" placeholder="Повторите пароль" />
+                    <input type="password" name="password2" id="password2" value={password2} onChange={onChange} placeholder="Повторите пароль" />
                     <br />
                     <Button className={'form__submit-link'} onClick={onSubmit} type="submit">Зарегистрироваться</Button>
                     {/* <Link className="form__submit-link" to={'/admin-panel'}>Зарегистрироваться</Link> */}
-                    
+
                     <br />
-                    <a href="#">Уже есть аккаунт?</a>
+                    <Link to={'/login'} >Уже есть аккаунт?</Link>
                     <hr />
                     <p class="formPolicy">Нажимая кнопку "Продолжить", вы подтверждаете свое согласие с
-                        <a href="#">Пользовательским соглашением</a> и даёте <a href="#">Согласие на обработку персональных
+                        <a href="#"> пользовательским соглашением</a> и даёте <a href="#">согласие на обработку персональных
                             данных.</a>
                     </p>
                 </form>

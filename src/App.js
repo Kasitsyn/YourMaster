@@ -13,23 +13,7 @@ import { FindMaster } from "./components/FindMaster/FindMaster.jsx";
 import { FindJob } from "./components/FindJob/FindJob.jsx";
 import { NotificationsPage } from "./components/NotificationsPage/NotificationsPage.jsx";
 import { SettingsComponent } from "./components/SettingsComponent/SettingsComponent.jsx";
-
-
-
-// const defaultState = {
-
-// }
-
-// const reducer = (state = defaultState, action) => {
-//   switch (action.type) {
-
-
-
-//     default: return state
-//   }
-// }
-
-// const store = createStore()
+import { Login } from './components/Login/Login';
 
 function App() {
   return (
@@ -39,6 +23,7 @@ function App() {
         <Route path='/' element={<Navigate to={'/YourMaster'} />} />
         <Route path='/YourMaster' element={<ClientLandingPage />} />
         <Route path='/registration' element={<MasterRegistration />} />
+        <Route path='/login' element={<Login />} />
         <Route path='/place-work' element={<JobApplication />} />
         <Route path='/current-works' element={<BaseWorkCard />} />
         <Route path="/admin-panel" element={<AdminPanel />} />

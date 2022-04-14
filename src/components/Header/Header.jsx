@@ -23,7 +23,7 @@ export function Header(props) {
 
     const isAuth = useSelector((state) => state.auth.isAuth)
     const dispatch = useDispatch()
-    const handleButtonClick = () => navigate('/registration')
+    const handleButtonClick = () => navigate('/client-registration')
     const handleButtonClickLogOut = () => {
         dispatch(signUp(false))
         navigate('/login')

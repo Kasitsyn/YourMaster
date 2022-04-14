@@ -8,6 +8,7 @@ import { Footer } from './components/Footer/Footer';
 import { Header } from './components/Header/Header';
 import { JobApplication } from './components/JobApplication/JobApplication';
 import { MasterRegistration } from './components/MasterRegistration/MasterRegistration';
+import { ClientRegistration } from './components/ClientRegistration/ClientRegistration.jsx';
 import { NotFoundPage } from './components/NotFoundPage/NotFoundPage';
 import { FindMaster } from "./components/FindMaster/FindMaster.jsx";
 import { FindJob } from "./components/FindJob/FindJob.jsx";
@@ -22,7 +23,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Navigate to={'/YourMaster'} />} />
         <Route path='/YourMaster' element={<ClientLandingPage />} />
-        <Route path='/registration' element={<MasterRegistration />} />
+        <Route path='/master-registration' element={<MasterRegistration />} />
+        <Route path='/client-registration' element={<ClientRegistration />} />
         <Route path='/login' element={<Login />} />
         <Route path='/place-work' element={<JobApplication />} />
         <Route path='/current-works' element={<BaseWorkCard />} />

@@ -9,7 +9,6 @@ import { BaseWorkCard } from "../BaseWorkCard/BaseWorkCard";
 import { MasterRegistration } from "../MasterRegistration/MasterRegistration";
 import { NotFoundPage } from "../NotFoundPage/NotFoundPage";
 import { useDispatch, useSelector } from "react-redux";
-import { signUp } from "../../store/authSlice";
 import { useAuth } from "hooks/use-auth";
 import { removeUser } from "store/userSlice";
 

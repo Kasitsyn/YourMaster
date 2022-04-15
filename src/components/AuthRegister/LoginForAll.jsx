@@ -19,7 +19,8 @@ export function LoginForAll() {
                 id: user.uid,
                 token: user.accessToken,
             }))
-            navigate('/admin-panel')
+            navigate('/admin-panel');
+
         })
         .catch(() => alert('Invalid User'))
 

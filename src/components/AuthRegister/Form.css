@@ -1,0 +1,125 @@
+.registrationBlock {
+    max-height: 1024px;
+}
+
+.registrationBlock form {
+    text-align: center;
+    width: 476px;
+    height: 805px;
+    margin: 114px auto;
+    box-shadow: 0px 0px 51px rgba(0, 8, 188, 0.08);
+}
+
+.registrationBlock form input,
+select,
+hr {
+    width: 315px;
+    height: 47px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    padding-left: 14px;
+}
+
+.registrationBlock form input:hover {
+    border-color: #339101;
+}
+
+.registrationBlock form input:focus {
+    border-color: #339101 !important;
+}
+
+.registrationBlock form input::placeholder {
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+select {
+    cursor: pointer;
+}
+
+.registrationBlock form h1 {
+    font-size: 27px;
+    font-weight: 600;
+    padding-top: 27px;
+    padding-bottom: 25px;
+}
+
+.registrationBlock .email {
+    margin-top: 21px;
+    margin-bottom: 21px !important;
+}
+
+.form-check-input {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.form-check-input:checked {
+    background-color: #37A000 !important;
+    border-color: #6FDA44 !important;
+}
+
+.form-check-input:focus {
+    box-shadow: none !important;
+}
+
+.registrationBlock form label {
+    float: left;
+    margin-left: 85px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.registrationBlock form input[placeholder="Пароль"] {
+    margin-top: 21px;
+    margin-bottom: 21px;
+}
+
+.registrationBlock form input[placeholder="Повторите пароль"] {
+    margin-bottom: 37px;
+}
+
+.form__submit-link {
+    width: 315px;
+    height: 47px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    padding-left: 14px;
+    background-color: #339101;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 21px;
+    border: none !important;
+}
+
+.registrationBlock form input[value="Зарегестрироваться"] {
+    background-color: #339101;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 21px;
+    border: none !important;
+}
+
+.registrationBlock form input[value="Зарегестрироваться"]+br+a {
+    text-decoration: none;
+    color: #339101;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+form hr {
+    margin: 24px auto;
+}
+
+.formPolicy {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.formPolicy a {
+    text-decoration: none;
+    color: #339101;
+}

@@ -4,7 +4,7 @@ import "./ClientLandingPage.css";
 
 export function ClientLandingPage() {
     return (
-        <div classNameName="clientLandingPage">
+        <div className="clientLandingPage">
             <div className="professions">
                 <div className="container">
                     <div className="row">

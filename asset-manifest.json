@@ -1,15 +1,30 @@
 {
   "files": {
-    "main.css": "/YourMaster/static/css/main.25e5c6cf.css",
-    "main.js": "/YourMaster/static/js/main.4f43642f.js",
+    "main.css": "/YourMaster/static/css/main.fa1a6b7a.css",
+    "main.js": "/YourMaster/static/js/main.c69b609a.js",
     "static/js/787.c8b6c92a.chunk.js": "/YourMaster/static/js/787.c8b6c92a.chunk.js",
+    "static/media/yourvalue.jpg": "/YourMaster/static/media/yourvalue.86cc7f88b5dd221e28d7.jpg",
+    "static/media/review.jpg": "/YourMaster/static/media/review.006e7d980bd95007c427.jpg",
+    "static/media/takeyourmaster.jpg": "/YourMaster/static/media/takeyourmaster.3fe4f35d5695f7d609b9.jpg",
+    "static/media/bmw.png": "/YourMaster/static/media/bmw.bd26cd9a67be7d224048.png",
+    "static/media/razval.jpg": "/YourMaster/static/media/razval.318a12c91b84512fe5b6.jpg",
+    "static/media/elektrik.jpg": "/YourMaster/static/media/elektrik.c56c12832484da1a343e.jpg",
+    "static/media/zvuk.jpg": "/YourMaster/static/media/zvuk.8af119de576953d89b40.jpg",
+    "static/media/maliar.jpg": "/YourMaster/static/media/maliar.085c3117bd2bbb37e7b2.jpg",
+    "static/media/revue.jpg": "/YourMaster/static/media/revue.e50bd19efd870b5850b4.jpg",
+    "static/media/diagnost.jpg": "/YourMaster/static/media/diagnost.58d9ab0dd74df3ea80cb.jpg",
+    "static/media/describe.jpg": "/YourMaster/static/media/describe.27d9702aa7229e4ef9c1.jpg",
+    "static/media/detailing.jpg": "/YourMaster/static/media/detailing.20a4c36d4f17cf2221d7.jpg",
+    "static/media/rihtovka.jpg": "/YourMaster/static/media/rihtovka.af26af061859a94d52b8.jpg",
+    "static/media/sleser.jpg": "/YourMaster/static/media/sleser.a9fdd7bb8353e0e95ec9.jpg",
+    "static/media/gbo.jpg": "/YourMaster/static/media/gbo.854431a9dfa5d6915256.jpg",
     "index.html": "/YourMaster/index.html",
-    "main.25e5c6cf.css.map": "/YourMaster/static/css/main.25e5c6cf.css.map",
-    "main.4f43642f.js.map": "/YourMaster/static/js/main.4f43642f.js.map",
+    "main.fa1a6b7a.css.map": "/YourMaster/static/css/main.fa1a6b7a.css.map",
+    "main.c69b609a.js.map": "/YourMaster/static/js/main.c69b609a.js.map",
     "787.c8b6c92a.chunk.js.map": "/YourMaster/static/js/787.c8b6c92a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.25e5c6cf.css",
-    "static/js/main.4f43642f.js"
+    "static/css/main.fa1a6b7a.css",
+    "static/js/main.c69b609a.js"
   ]
 }

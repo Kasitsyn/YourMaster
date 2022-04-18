@@ -3,30 +3,32 @@ import { Button } from "../UI/buttons/Button";
 import { Nav } from "./NAV/Nav";
 import "./Header.css";
 import { Control } from "./Control/Control";
-import { Link, Route, Routes, useNavigate } from "react-router-dom";
+import { Link, Route, Routes, useNavigate, Redirect } from "react-router-dom";
 import { JobApplication } from "../JobApplication/JobApplication";
 import { BaseWorkCard } from "../BaseWorkCard/BaseWorkCard";
 import { MasterRegistration } from "../MasterRegistration/MasterRegistration";
 import { NotFoundPage } from "../NotFoundPage/NotFoundPage";
 import { useDispatch, useSelector } from "react-redux";
-import { signUp } from "../../store/authSlice";
-
+import { useAuth } from "hooks/use-auth";
+import { removeUser } from "store/userSlice";
 
 
 export function Header(props) {
     const navigate = useNavigate()
+    const {isAuth, email} = useAuth();
+    const dispatch = useDispatch();
+
     const navForClient = [
         { id: 1, title: 'Найти мастера', link: '/find-master' },
         { id: 2, title: 'Разместить работу', link: '/place-work' },
         { id: 3, title: 'Панель управления', link: '/admin-panel' },
     ];
 
-    const isAuth = useSelector((state) => state.auth.isAuth)
-    const dispatch = useDispatch()
-    const handleButtonClick = () => navigate('/client-registration')
+   
+    const handleButtonClick = () => navigate('/client-registration') //на регистрацию
     const handleButtonClickLogOut = () => {
-        dispatch(signUp(false))
-        navigate('/login')
+        dispatch(removeUser());
+        navigate('/YourMaster');
     }
     return (
         <header>
@@ -49,7 +51,7 @@ export function Header(props) {
                     <div className="col-lg-1 col-md-2 col-sm-4 col-5 loginBlock">
                         {isAuth
                             ? <Button onClick={handleButtonClickLogOut} className="btn-success">Выйти</Button>
-                            : <Button onClick={handleButtonClick} className="btn-success">Войти</Button>}
+                            : <Button onClick={handleButtonClick} className="btn-success">Регистрация</Button>}
                     </div>
                 </div>
             </div>

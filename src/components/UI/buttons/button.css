@@ -19,17 +19,16 @@
 }
 
 .btn-success {
-    width: 109px;
-    height: 34px;
     background: #37A000;
     border-radius: 6px;
     font-size: 17px;
-    padding-top: 3px;
+    padding: 4px 15px 4px 15px;
 }
 
 .btn-simpleButton{
-    width: 314px;
-    height: 54px;
+    /* width: 314px;
+    height: 54px; */
+    padding: 4px 20px 4px 20px;
     border: 2px solid;
     border-radius: 30px;
     font-weight: 600;

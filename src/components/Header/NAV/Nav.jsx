@@ -7,7 +7,7 @@ import "./Nav.css";
 export function Nav(props) {
   return (
     <li className="nav-item">
-      <Link to={props.link} href="#" className="nav-link" aria-current="page">
+      <Link to={props.link} className="nav-link" aria-current="page">
         <p>{props.item.title}</p>
       </Link>
     </li>

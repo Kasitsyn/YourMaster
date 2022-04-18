@@ -30,6 +30,10 @@
   .circle {
     border-radius: 50%;
   }
+
+  .noneBadge {
+    display: none;
+  }
   
   .warning,
   .alert,

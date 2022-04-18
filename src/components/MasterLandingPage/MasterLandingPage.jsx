@@ -1,8 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./MasterLandingPage.css";
+import { useAuth } from "hooks/use-auth";
 
 export function MasterLandingPage() {
+
+    const { isAuth } = useAuth();
+
     return (
         <div className="masterLandingPage">
             <div className="firstMasterBlock">
@@ -15,7 +19,14 @@ export function MasterLandingPage() {
                             сервиса.</p>
                         <ul>
                             <li>
-                                <button className="btn btn-success setJob">Создать аккаунт</button>
+                                {isAuth
+                                    ? <Link to="/admin-panel">
+                                        <button className="btn btn-success setJob">Начать поиск клиентов</button>
+                                    </Link>
+                                    : <Link to="/client-registration">
+                                        <button className="btn btn-success setJob">Создать аккаунт</button>
+                                    </Link>
+                                }
                             </li>
                             <li>
                                 <button className="btn btn-light howItWork">Заказать звонок</button>
@@ -50,7 +61,14 @@ export function MasterLandingPage() {
 
             <div className="callToAction">
                 <div className="container">
-                    <button className="btn btn-success setJob">Создать аккаунт</button>
+                    {isAuth
+                        ? <Link to="/admin-panel">
+                            <button className="btn btn-success setJob">Начать поиск клиентов</button>
+                        </Link>
+                        : <Link to="/client-registration">
+                            <button className="btn btn-success setJob">Создать аккаунт</button>
+                        </Link>
+                    }
                 </div>
             </div>
 
@@ -142,7 +160,15 @@ export function MasterLandingPage() {
                     <p>Сергей Иванович, владелец СТО “Гайкокрут”</p>
                     <a href="">Посмотреть все отзывы</a>
                     <br />
-                    <button className="btn btn-success setJob">Присоединиться</button>
+                    {isAuth
+                        ? <Link to="/admin-panel">
+                            <button className="btn btn-success setJob">Начать поиск клиентов</button>
+                        </Link>
+                        : <Link to="/client-registration">
+                            <button className="btn btn-success setJob">Присоединиться</button>
+                        </Link>
+                    }
+
                 </div>
             </div>
 

@@ -1,8 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./ClientLandingPage.css";
+import { useAuth } from "hooks/use-auth";
 
 export function ClientLandingPage() {
+
+    const { isAuth } = useAuth();
+
     return (
         <div className="clientLandingPage">
             <div className="professions">
@@ -26,10 +30,19 @@ export function ClientLandingPage() {
                     <h1>НАЙДИ СВОЕГО МАСТЕРА</h1>
                     <ul>
                         <li>
-                            <button className="setJob">Разместить работу</button>
+                            {isAuth
+                                ? <Link to="/admin-panel">
+                                    <button className="setJob">Разместить работу</button>
+                                </Link>
+                                : <Link to="/client-registration">
+                                    <button className="setJob">Разместить работу</button>
+                                </Link>
+                            }
                         </li>
                         <li>
-                            <button className="btn btn-light howItWork">Как это работает</button>
+                            <a href="#howItWorkAnchor">
+                                <button className="btn btn-light howItWork">Как это работает</button>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -135,7 +148,9 @@ export function ClientLandingPage() {
 
             <div className="howItworksBlock">
                 <div className="container">
-                    <h2>Как Это Работает?</h2>
+                    <a name="howItWorkAnchor">
+                        <h2>Как Это Работает?</h2>
+                    </a>
                     <p className="firstP">Найдите мастера для ремонта и обслуживания вашего автомобиля в уже сейчас</p>
                     <div className="howItWorksContainer">
                         <div className="howItWorksInfo">
@@ -412,7 +427,14 @@ export function ClientLandingPage() {
                     <h2>
                         Получите оценку прямо сейчас
                     </h2>
-                    <button className="btn btn-success setJob takeYourValueBtn">Разместить работу</button>
+                    {isAuth
+                        ? <Link to="/admin-panel">
+                            <button className="btn btn-success setJob takeYourValueBtn">Разместить работу</button>
+                        </Link>
+                        : <Link to="/client-registration">
+                            <button className="btn btn-success setJob takeYourValueBtn">Разместить работу</button>
+                        </Link>
+                    }                    
                 </div>
             </div>
         </div>

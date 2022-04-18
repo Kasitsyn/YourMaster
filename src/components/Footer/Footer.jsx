@@ -1,6 +1,7 @@
 import { Button } from "../UI/buttons/Button";
 import { Icon } from "../UI/Icon/Icon";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 export function Footer() {
   return (
@@ -12,7 +13,7 @@ export function Footer() {
               <span>Твой</span>Мастер
             </h3>
             <a href="tel:+380631349272">
-              <Icon name="phone" className={'phoneIcon'} size={2}/>
+              <Icon name="phone" className={'phoneIcon'} size={2} />
               <span> +38063 134 92 72</span>
             </a>
             <ul className="footerFirst">
@@ -60,7 +61,10 @@ export function Footer() {
           </div>
           <div className="col-lg-3 col-md-12 col-sm-12 col-12">
             <p>Вы мастер или СТО?</p>
-            <Button className="howItWorksBtn">Узнать больше</Button>
+            <Link to="/for-masters">
+              <Button className="howItWorksBtn">Узнать больше</Button>
+            </Link>
+
           </div>
         </div>
 

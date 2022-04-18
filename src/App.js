@@ -15,6 +15,7 @@ import { FindJob } from "./components/FindJob/FindJob.jsx";
 import { NotificationsPage } from "./components/NotificationsPage/NotificationsPage.jsx";
 import { SettingsComponent } from "./components/SettingsComponent/SettingsComponent.jsx";
 import { Login } from './components/Login/Login';
+import { MasterLandingPage } from "./components/MasterLandingPage/MasterLandingPage.jsx";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path='/YourMaster' element={<ClientLandingPage />} />
         <Route path='/master-registration' element={<MasterRegistration />} />
         <Route path='/client-registration' element={<ClientRegistration />} />
+        <Route path='/for-masters' element={<MasterLandingPage />} />
         <Route path='/login' element={<Login />} />
         <Route path='/place-work' element={<JobApplication />} />
         <Route path='/current-works' element={<BaseWorkCard />} />

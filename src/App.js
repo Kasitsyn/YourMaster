@@ -16,6 +16,7 @@ import { NotificationsPage } from "./components/NotificationsPage/NotificationsP
 import { SettingsComponent } from "./components/SettingsComponent/SettingsComponent.jsx";
 import { Login } from './components/Login/Login';
 import { MasterLandingPage } from "./components/MasterLandingPage/MasterLandingPage.jsx";
+import { ProtectedRoutes } from 'ProtectedRoutes';
 
 function App() {
   return (
@@ -24,18 +25,21 @@ function App() {
       <Routes>
         <Route path='/' element={<Navigate to={'/YourMaster'} />} />
         <Route path='/YourMaster' element={<ClientLandingPage />} />
-        <Route path='/master-registration' element={<MasterRegistration />} />
-        <Route path='/client-registration' element={<ClientRegistration />} />
         <Route path='/for-masters' element={<MasterLandingPage />} />
         <Route path='/login' element={<Login />} />
-        <Route path='/place-work' element={<JobApplication />} />
-        <Route path='/current-works' element={<BaseWorkCard />} />
-        <Route path="/admin-panel" element={<AdminPanel />} />
-        <Route path="/find-master" element={<FindMaster />} />
-        <Route path="/find-job" element={<FindJob />} />
-        <Route path="/notifications" element={<NotificationsPage />} />
-        <Route path='/settings' element={<SettingsComponent />} />
         <Route path='*' element={<NotFoundPage />} />
+
+        <Route element={<ProtectedRoutes />}>
+          <Route path='/place-work' element={<JobApplication />} />
+          <Route path="/find-job" element={<FindJob />} />
+          <Route path="/admin-panel" element={<AdminPanel />} />
+          <Route path="/find-master" element={<FindMaster />} />
+          <Route path='/current-works' element={<BaseWorkCard />} />
+          <Route path='/master-registration' element={<MasterRegistration />} />
+          <Route path="/notifications" element={<NotificationsPage />} />
+          <Route path='/client-registration' element={<ClientRegistration />} />
+          <Route path='/settings' element={<SettingsComponent />} />
+        </Route>
       </Routes>
 
       <Footer />

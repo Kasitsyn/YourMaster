@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/YourMaster/static/css/main.fa1a6b7a.css",
-    "main.js": "/YourMaster/static/js/main.c69b609a.js",
+    "main.css": "/YourMaster/static/css/main.9fafb7ef.css",
+    "main.js": "/YourMaster/static/js/main.509f02ed.js",
     "static/js/787.c8b6c92a.chunk.js": "/YourMaster/static/js/787.c8b6c92a.chunk.js",
     "static/media/yourvalue.jpg": "/YourMaster/static/media/yourvalue.86cc7f88b5dd221e28d7.jpg",
     "static/media/review.jpg": "/YourMaster/static/media/review.006e7d980bd95007c427.jpg",
     "static/media/takeyourmaster.jpg": "/YourMaster/static/media/takeyourmaster.3fe4f35d5695f7d609b9.jpg",
     "static/media/bmw.png": "/YourMaster/static/media/bmw.bd26cd9a67be7d224048.png",
+    "static/media/masterPage.png": "/YourMaster/static/media/masterPage.115e8689b56736ee32e5.png",
     "static/media/razval.jpg": "/YourMaster/static/media/razval.318a12c91b84512fe5b6.jpg",
     "static/media/elektrik.jpg": "/YourMaster/static/media/elektrik.c56c12832484da1a343e.jpg",
     "static/media/zvuk.jpg": "/YourMaster/static/media/zvuk.8af119de576953d89b40.jpg",
@@ -19,12 +20,12 @@
     "static/media/sleser.jpg": "/YourMaster/static/media/sleser.a9fdd7bb8353e0e95ec9.jpg",
     "static/media/gbo.jpg": "/YourMaster/static/media/gbo.854431a9dfa5d6915256.jpg",
     "index.html": "/YourMaster/index.html",
-    "main.fa1a6b7a.css.map": "/YourMaster/static/css/main.fa1a6b7a.css.map",
-    "main.c69b609a.js.map": "/YourMaster/static/js/main.c69b609a.js.map",
+    "main.9fafb7ef.css.map": "/YourMaster/static/css/main.9fafb7ef.css.map",
+    "main.509f02ed.js.map": "/YourMaster/static/js/main.509f02ed.js.map",
     "787.c8b6c92a.chunk.js.map": "/YourMaster/static/js/787.c8b6c92a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa1a6b7a.css",
-    "static/js/main.c69b609a.js"
+    "static/css/main.9fafb7ef.css",
+    "static/js/main.509f02ed.js"
   ]
 }

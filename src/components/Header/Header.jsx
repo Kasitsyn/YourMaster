@@ -49,10 +49,7 @@ export function Header(props) {
                             }
 
                         </ul>
-                        {isAuth
-                            ? <Control bell="/notifications" settings="/settings" />
-                            : <Control bell="/client-registration" settings="/client-registration" />}
-
+                        <Control />
                     </div>
                     <div className="col-lg-1 col-md-2 col-sm-4 col-5 loginBlock">
                         {isAuth

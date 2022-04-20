@@ -81,6 +81,7 @@ select {
 }
 
 .form__submit-link {
+    margin-top: 20px;
     width: 315px;
     height: 47px;
     border: 1px solid rgba(0, 0, 0, 0.6);
@@ -122,4 +123,17 @@ form hr {
 .formPolicy a {
     text-decoration: none;
     color: #339101;
+}
+
+.registrationForm {
+    position: relative;
+}
+
+.error {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 97, 97);
+    font-size: 12px;
+    font-weight: 300;
 }

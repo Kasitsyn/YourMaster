@@ -1,13 +1,14 @@
 import { Form } from "./Form";
 import { useDispatch } from "react-redux";
 import { useNavigate } from 'react-router-dom';
-import { setUser } from "store/userSlice";
+import { setError, setUser } from "store/userSlice";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 
 export function LoginForAll() {
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
+    dispatch(setError(null))
 
     const handleLogin = (email, password) => {
         const auth = getAuth();
@@ -22,7 +23,7 @@ export function LoginForAll() {
             navigate('/admin-panel');
 
         })
-        .catch(() => alert('Invalid User'))
+        .catch(error => dispatch(setError(error)))
 
     }
 

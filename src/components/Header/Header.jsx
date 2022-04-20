@@ -10,7 +10,7 @@ import { Link, Route, Routes, useNavigate, Redirect } from "react-router-dom";
 // import { NotFoundPage } from "../NotFoundPage/NotFoundPage";
 import { useDispatch, useSelector } from "react-redux";
 import { useAuth } from "hooks/use-auth";
-import { removeUser } from "store/userSlice";
+import { removeUser, setError } from "store/userSlice";
 
 
 export function Header(props) {
@@ -28,6 +28,7 @@ export function Header(props) {
     const handleButtonClick = () => navigate('/client-registration') //на регистрацию
     const handleButtonClickLogOut = () => {
         dispatch(removeUser());
+        dispatch(setError(null))
         navigate('/YourMaster');
     }
     return (

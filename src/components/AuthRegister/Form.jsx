@@ -57,7 +57,7 @@ export function Form({ title, handleClick }) {
             {errors?.email ? <p className="error">введите email</p>
                 : error?.code === "auth/user-not-found" ? <p className="error">пользователь не найден</p>
                     : error?.code === "auth/email-already-in-use" ? <p className="error">email зарегистрирован</p>
-                        : ''}
+                    : error?.code === "auth/invalid-email" ? <p className="error">некорректный email</p> : ''}
             <input
                 {...register("password", {
                     required: true,
